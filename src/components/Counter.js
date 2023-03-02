@@ -5,24 +5,24 @@ import classes from './Counter.module.css';
 
 
 const Counter = () => {
-  const dispatch = useDispatch();
-  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch()
+  const counter = useSelector(state => state.counter)
   const show = useSelector(state => state.showCounter)
 
   const incrementHandler = () => {
-    dispatch(counterActions.increment());
+    dispatch(counterActions.increment())
   }
 
   const increaseHandler = () => {
-    dispatch(counterActions.increase(10));
+    dispatch(counterActions.increase(10))
   }
 
   const decrementHandler = () => {
-    dispatch(counterActions.decrement());
+    dispatch(counterActions.decrement())
   }
 
   const toggleCounterHandler = () => {
-    dispatch(counterActions.toggleCounter());
+    dispatch(counterActions.toggleCounter())
   };
 
   return (
